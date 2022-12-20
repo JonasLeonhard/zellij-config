@@ -66,7 +66,7 @@ keybinds {
         bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
         bind "S" { 
-           Run "zellij" "action" "new-tab" "-c" "~/.config/zellij/layouts" "-l" "strider" {
+           Run "zellij" "action" "new-tab" "-l" "~/.config/zellij/layouts/strider.kdl" {
             cwd "./"
             direction "Down"
            };

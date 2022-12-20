@@ -65,15 +65,8 @@ keybinds {
         bind "8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
-        bind "S" { 
-           Run "zellij" "action" "new-tab" "-l" "~/.config/zellij/layouts/strider.kdl" {
-            cwd "./"
-            direction "Down"
-           };
-           GoToPreviousTab;
-           CloseFocus;
-           GoToNextTab;
-        }
+        bind "S" { WriteChars "zellij action new-tab -l layouts/strider.kdl\n"; }
+        bind "G" { WriteChars "zellij action new-tab -l layouts/lazygit.kdl\n"; }
     }
     scroll {
         bind "Ctrl s" { SwitchToMode "Normal"; }

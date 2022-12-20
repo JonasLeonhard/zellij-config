@@ -17,3 +17,10 @@
 ```
 git clone git@github.com:JonasLeonhard/zellij-config.git ~/.config/zellij
 ```
+
+add onStartup and config_dir location to your zshrc!
+
+```
+echo 'eval "$(zellij setup --generate-auto-start zsh)"' >> ~/.zshrc
+echo 'export ZELLIJ_CONFIG_DIR="$HOME/.config/zellij"' >> ~/.zshrc
+```

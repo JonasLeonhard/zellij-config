@@ -67,6 +67,7 @@ keybinds clear-defaults=true {
         bind "Tab" { ToggleTab; }
         bind "S" { WriteChars "zellij action new-tab -l layouts/strider.kdl\n"; }
         bind "G" { WriteChars "zellij action new-tab -l layouts/lazygit.kdl\n"; }
+        bind "D" { WriteChars "zellij action new-tab -l layouts/default.kdl\n"; }
     }
     scroll {
         bind "Ctrl s" { SwitchToMode "Normal"; }

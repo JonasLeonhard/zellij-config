@@ -67,8 +67,6 @@ keybinds clear-defaults=true {
         bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
         bind "S" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/strider.kdl\n"; }
-        bind "L" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/lazygit.kdl\n"; }
-        bind "G" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/gitui.kdl\n"; }
         bind "D" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/default.kdl\n"; }
     }
     scroll {
@@ -156,6 +154,12 @@ keybinds clear-defaults=true {
         bind "Ctrl l" "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
         bind "Ctrl j" "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "Ctrl k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "f" {
+            LaunchPlugin "filepicker" {
+                floating true // uncomment this to have the filepicker opened in a floating window
+            };
+            close_on_selection true // comment this out to have the filepicker remain open even after selecting a file
+        }
     }
     shared_except "locked" {
       bind "Ctrl a" { SwitchToMode "Tmux"; }

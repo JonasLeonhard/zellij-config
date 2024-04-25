@@ -210,7 +210,22 @@ pane_frames false
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "catppuccin-mocha"
+themes {
+    mymocha {
+        bg "#585b70" // Surface2
+        fg "#cdd6f4"
+        red "#f38ba8"
+        green "#a6e3a1"
+        blue "#89b4fa"
+        yellow "#f9e2af"
+        magenta "#f5c2e7" // Pink
+        orange "#fab387" // Peach
+        cyan "#89dceb" // Sky
+        black "#0b0b12" // Mantle
+        white "#cdd6f4"
+    }
+}
+theme "mymocha"
 
 // The name of the default layout to load on startup
 // Default: "default"

@@ -55,7 +55,7 @@ keybinds clear-defaults=true {
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "q" { CloseTab; SwitchToMode "Normal"; }
-        bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
+        bind "S" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
         bind "1" { GoToTab 1; SwitchToMode "Normal"; }
         bind "2" { GoToTab 2; SwitchToMode "Normal"; }
         bind "3" { GoToTab 3; SwitchToMode "Normal"; }
@@ -66,7 +66,9 @@ keybinds clear-defaults=true {
         bind "8" { GoToTab 8; SwitchToMode "Normal"; }
         bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
-        bind "S" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/strider.kdl\n"; }
+        bind "s" { BreakPane; SwitchToMode "Normal"; }
+        bind "v" { BreakPaneRight; SwitchToMode "Normal"; }
+        bind "V" { BreakPaneLeft; SwitchToMode "Normal"; }
         bind "D" { WriteChars "zellij action new-tab -l ~/.config/zellij/layouts/default.kdl\n"; }
     }
     scroll {

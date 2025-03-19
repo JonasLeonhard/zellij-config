@@ -50,8 +50,10 @@ keybinds clear-defaults=true {
     tab {
         bind "Ctrl t" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-        bind "h" "Left" "Up" "j" { GoToPreviousTab; }
-        bind "l" "Right" "Down" "k" { GoToNextTab; }
+        bind "Left" "Up" "j" { GoToPreviousTab; }
+        bind "Right" "Down" "k" { GoToNextTab; }
+        bind "h" { MoveTab "Left"; }
+        bind "l" { MoveTab "Right"; }
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "q" { CloseTab; SwitchToMode "Normal"; }
